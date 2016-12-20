@@ -60,3 +60,27 @@ git push -u origin master
 由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
 
 远程库的名字就是origin，这是Git默认的叫法，也可以改成别的，但是origin这个名字一看就知道是远程库。
+
+
+  
+  
+  ===============
+  我更新我本地的readme
+  然后git status 查看一下
+  然后git commit -m "注释" readme.txt
+  然后提交git push origin master   这样服务器就更新了
+  ===============
+
+9.从远程仓库克隆
+  要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆。
+  Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。
+
+10、创建分支
+   首先，我们创建dev分支，然后切换到dev分支：
+
+   git checkout -b dev
+   == 
+   git branch dev
+   git checkout dev
+
+   用git branch命令查看当前分支
